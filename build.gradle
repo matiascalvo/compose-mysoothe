@@ -1,0 +1,43 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath libs.android.gradlePlugin
+        classpath libs.kotlin.gradlePlugin
+        classpath libs.junit5.gradlePlugin
+        classpath libs.hilt.gradlePlugin
+    }
+}
+
+plugins {
+    alias(libs.plugins.spotless) apply false
+    alias(libs.plugins.detekt) apply false
+}
+
+subprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    apply from: "${project.rootDir}/buildscripts/spotless.gradle"
+    apply from: "${project.rootDir}/buildscripts/detekt.gradle"
+
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+        kotlinOptions {
+            // Treat all Kotlin warnings as errors
+            allWarningsAsErrors = true
+
+            freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
+
+            // Set JVM target to 11
+            jvmTarget = JavaVersion.VERSION_11
+        }
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

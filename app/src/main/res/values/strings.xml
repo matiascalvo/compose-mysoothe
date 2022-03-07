@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MySoothe</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log in</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="search">Search</string>
+    <string name="favorite_collections">Favorite Collections</string>
+    <string name="align_your_body">Align your body</string>
+    <string name="aling_your_mind">Align your mind</string>
+
+    <string name="not_implemented">Not implemented yet</string>
+    <string name="empty_search">There are no elements matching your search, please try again.</string>
+    <string name="login_error">Login failed. Username or password did not match.</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+
+
+</resources>
