@@ -10,7 +10,6 @@ The design of this app comes from an
 old [Android Dev Challenge](https://android-developers.googleblog.com/2021/03/android-dev-challenge-3.html) back in
 March 2021
 
-
 ## Development
 
 * UI written in [Jetpack Compose](https://developer.android.com/jetpack/compose).
@@ -21,7 +20,6 @@ March 2021
   [spotless](https://github.com/diffplug/spotless) for checking code style 
   (Kotlin with [ktlint](https://github.com/pinterest/ktlint), XMLs and Gradle Files).
  * Uses [Github Actions](https://github.com/features/actions) as CI/CD.
-  
 
 ## :camera_flash: Screenshots
 
@@ -41,6 +39,6 @@ Valid credentials:
 
 Email | Password
 --- | --- |
-"test@test.com" | "test"
-"your@email.com" | "your"
-"a@a.com" | "aaaa"
+test@test.com | test
+your@email.com | your
+a@a.com | aaaa
